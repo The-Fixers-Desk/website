@@ -1,0 +1,49 @@
+:root {
+  /* Core palette */
+  --espresso: #241b15;
+  --espresso-soft: #4f4035;
+  --cream: #f3eadc;
+  --linen: #e7d8c4;
+  --parchment: #d6bea0;
+  --oak: #a76f3f;
+  --oak-deep: #704629;
+  --brass: #b78a4c;
+  --moss: #45513b;
+  --moss-soft: #78806a;
+  --ivory: #fffaf1;
+
+  /* Semantic colors */
+  --ink: var(--espresso);
+  --ink-soft: var(--espresso-soft);
+  --paper: var(--cream);
+  --paper-light: var(--ivory);
+  --paper-deep: var(--linen);
+  --sage: var(--moss-soft);
+  --sage-dark: var(--moss);
+  --sage-light: #c7c6ad;
+  --clay: var(--oak);
+
+  /* Lines and depth */
+  --line: rgba(60, 43, 31, 0.18);
+  --line-light: rgba(255, 250, 241, 0.2);
+  --shadow: 0 30px 80px rgba(53, 35, 21, 0.12);
+  --shadow-soft: 0 10px 35px rgba(18, 10, 6, 0.14);
+
+  /* Typography */
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+
+  --font-body: "Manrope", "Segoe UI", Arial, sans-serif;
+
+  --font-hand: "Kalam", "Segoe Print", "Bradley Hand", cursive;
+
+  /* Layout */
+  --page-width: 1240px;
+  --wide-page-width: 1440px;
+  --side-padding: clamp(24px, 5vw, 72px);
+
+  /* Motion */
+  --motion-fast: 350ms;
+  --motion-medium: 550ms;
+  --motion-slow: 750ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

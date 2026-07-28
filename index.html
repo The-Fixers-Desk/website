@@ -1,69 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="The Fixer's Desk investigates overlooked operational problems and creates focused software that makes everyday work clearer, simpler, and more manageable."
+    />
+
     <title>The Fixer's Desk</title>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<header>
-    <h1>The Fixer's Desk</h1>
+  <body>
+    <main id="top">
+      <div class="hero-shell">
+        <header class="site-header">
+          <a class="wordmark" href="#top" aria-label="The Fixer's Desk home">
+            The Fixer's Desk
+          </a>
 
-    <p class="tagline">
-        Solving real-world problems with elegant software.
-    </p>
-</header>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#work">Our Work</a>
+            <a href="#approach">Our Approach</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-<main>
+        <section class="hero">
+          <div class="hero__eyebrow">A problem-first software studio</div>
 
-<section>
+          <h1>
+            Better solutions for problems people have learned to live with.
+          </h1>
 
-<h2>What We Do</h2>
+          <p class="hero__intro">
+            We investigate overlooked operational problems and create focused
+            software that makes everyday work clearer, simpler, and more
+            manageable.
+          </p>
 
-<p>
-The Fixer's Desk builds focused software tools that solve messy real-world problems people have simply accepted as "the way things are."
-</p>
+          <a class="text-link" href="#work">
+            See what we are building
+            <span aria-hidden="true">↓</span>
+          </a>
+        </section>
+      </div>
 
-<p>
-Every product begins with evidence of an actual problem—not assumptions.
-</p>
+      <section class="statement" aria-label="Company philosophy">
+        <p>
+          Thoughtful investigation.
+          <span>Useful answers.</span>
+          Solutions built with care.
+        </p>
+      </section>
 
-</section>
+      <section class="work section" id="work">
+        <div class="section-heading">
+          <p class="section-label">Current work</p>
 
-<section>
+          <h2>
+            A clearer way to evaluate whether an event is worth the investment.
+          </h2>
+        </div>
 
-<h2>Current Products</h2>
+        <article class="product-card">
+          <div class="product-card__details">
+            <div class="product-card__status">
+              <span class="status-dot" aria-hidden="true"></span>
+              In development
+            </div>
 
-<p>
-🚧 Food Truck Event Profit Calculator (In Development)
-</p>
+            <h3>Food Truck Event Profit Calculator</h3>
 
-</section>
+            <p>
+              A focused planning tool for estimating event costs, revenue, and
+              profitability before committing time, inventory, and money.
+            </p>
 
-<section>
+            <div class="product-card__meta">
+              <span>Desktop software</span>
+              <span>Built for food truck operators</span>
+            </div>
+          </div>
 
-<h2>Contact</h2>
+          <div class="product-card__preview" aria-hidden="true">
+            <div class="preview-window">
+              <div class="preview-window__top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
-<p>
-contact@fixersdesk.com
-</p>
+              <div class="preview-window__body">
+                <div class="preview-line preview-line--short"></div>
+                <div class="preview-value"></div>
 
-</section>
+                <div class="preview-grid">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
 
-</main>
+                <div class="preview-result"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
 
-<footer>
+      <section class="approach section" id="approach">
+        <div class="section-heading">
+          <p class="section-label">Our approach</p>
 
-<p>
-© 2026 The Fixer's Desk
-</p>
+          <h2>We begin with the problem, not the product.</h2>
+        </div>
 
-</footer>
+        <div class="approach-grid">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Observe carefully</h3>
+            <p>
+              We look for recurring friction, incomplete workarounds, and needs
+              that have gone unresolved for too long.
+            </p>
+          </article>
 
-<script src="script.js"></script>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Understand fully</h3>
+            <p>
+              We examine how the problem actually affects the people living and
+              working with it.
+            </p>
+          </article>
 
-</body>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Build deliberately</h3>
+            <p>
+              We create focused, maintainable solutions that reduce complexity
+              instead of adding more of it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="about__copy">
+          <p class="section-label">The Fixer's Desk</p>
+
+          <h2>A place for problems that deserve a better answer.</h2>
+        </div>
+
+        <div class="about__body">
+          <p>
+            The Fixer's Desk is a problem-first software studio founded by
+            Deidra Clay.
+          </p>
+
+          <p>
+            Every project begins with evidence of a real need. We study the
+            problem, examine the systems surrounding it, and build a clearer and
+            more useful alternative.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <p class="section-label">Contact</p>
+
+        <h2>Have a problem that deserves a better solution?</h2>
+
+        <p>Tell us what is getting in the way.</p>
+
+        <a class="contact-link" href="mailto:contact@fixersdesk.com">
+          contact@fixersdesk.com
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 The Fixer's Desk</p>
+
+      <p>Thoughtful solutions, built with care.</p>
+    </footer>
+  </body>
 </html>
