@@ -1,0 +1,173 @@
+/* ==========================================
+   HERO ENVIRONMENT
+========================================== */
+
+.hero-shell {
+  position: relative;
+
+  min-height: 108svh;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(25, 17, 12, 0.7) 0%,
+      rgba(31, 21, 14, 0.68) 28%,
+      rgba(37, 25, 17, 0.34) 53%,
+      rgba(37, 25, 17, 0.05) 80%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(20, 14, 10, 0.18) 0%,
+      transparent 30%,
+      rgba(20, 14, 10, 0.14) 100%
+    ),
+    url("../images/office-hero.png");
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
+
+.hero {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: min(calc(100% - (var(--side-padding) * 2)), var(--page-width));
+
+  min-height: calc(108svh - 91px);
+
+  margin-inline: auto;
+  padding: 70px 0 90px;
+
+  color: var(--ivory);
+}
+
+/* ==========================================
+   HERO LABEL
+========================================== */
+
+.hero__eyebrow {
+  margin: 0 0 26px;
+
+  color: rgba(255, 250, 241, 0.8);
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  text-shadow:
+    0 1px 5px rgba(18, 10, 6, 0.7),
+    0 2px 14px rgba(18, 10, 6, 0.45);
+}
+
+/* ==========================================
+   HERO HEADLINE
+========================================== */
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0;
+
+  color: var(--ivory);
+
+  font-family: var(--font-display);
+  font-size: clamp(3.25rem, 6vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.01;
+
+  text-wrap: balance;
+
+  text-shadow:
+    0 2px 24px rgba(22, 14, 9, 0.3),
+    0 1px 5px rgba(22, 14, 9, 0.3);
+}
+
+/* ==========================================
+   HERO INTRODUCTION
+========================================== */
+
+.hero__intro {
+  max-width: 580px;
+
+  margin: 34px 0 28px;
+
+  color: rgba(255, 250, 241, 0.88);
+
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1.65;
+
+  text-shadow:
+    0 1px 5px rgba(22, 14, 9, 0.72),
+    0 2px 18px rgba(22, 14, 9, 0.42);
+}
+
+/* ==========================================
+   HERO CALL TO ACTION
+========================================== */
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+
+  gap: 12px;
+
+  padding-bottom: 5px;
+
+  color: var(--ink);
+
+  border-bottom: 1px solid currentColor;
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+
+  transition:
+    gap var(--motion-slow) var(--motion-ease),
+    color var(--motion-slow) var(--motion-ease),
+    transform var(--motion-slow) var(--motion-ease);
+}
+
+.hero .text-link {
+  color: var(--ivory);
+
+  border-bottom-color: rgba(255, 250, 241, 0.78);
+
+  text-shadow:
+    0 1px 5px rgba(22, 14, 9, 0.7),
+    0 2px 14px rgba(22, 14, 9, 0.4);
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  gap: 18px;
+  transform: translateY(-2px);
+}
+
+.text-link span {
+  display: inline-block;
+
+  transition: transform var(--motion-slow) var(--motion-ease);
+}
+
+.text-link:hover span,
+.text-link:focus-visible span {
+  transform: translateY(4px);
+}
