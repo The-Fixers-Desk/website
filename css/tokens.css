@@ -1,3 +1,19 @@
+/* ==========================================
+   LOCAL FONTS
+========================================== */
+
+@font-face {
+  font-family: "Allison";
+  src: url("../fonts/Allison-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* ==========================================
+   DESIGN TOKENS
+========================================== */
+
 :root {
   /* Core palette */
   --espresso: #241b15;
@@ -34,7 +50,7 @@
 
   --font-body: "Manrope", "Segoe UI", Arial, sans-serif;
 
-  --font-hand: "Kalam", "Segoe Print", "Bradley Hand", cursive;
+  --font-signature: "Allison", "Segoe Script", cursive;
 
   /* Layout */
   --page-width: 1240px;

@@ -1,0 +1,84 @@
+/* ==========================================
+   HERO ENTRANCE
+========================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-shell {
+    animation: hero-reveal 1000ms var(--motion-ease) both;
+  }
+
+  .site-header,
+  .hero__eyebrow,
+  .hero h1,
+  .hero__intro,
+  .hero .text-link {
+    opacity: 0;
+
+    animation: hero-content-in var(--motion-slow) var(--motion-ease) forwards;
+  }
+
+  .site-header {
+    animation-delay: 250ms;
+  }
+
+  .hero__eyebrow {
+    animation-delay: 450ms;
+  }
+
+  .hero h1 {
+    animation-delay: 650ms;
+  }
+
+  .hero__intro {
+    animation-delay: 900ms;
+  }
+
+  .hero .text-link {
+    animation-delay: 1100ms;
+  }
+}
+
+/* ==========================================
+   KEYFRAMES
+========================================== */
+
+@keyframes hero-reveal {
+  from {
+    opacity: 0;
+    transform: scale(1.012);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,216 @@
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 540px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--line);
+  border-radius: 30px;
+
+  background: var(--paper-light);
+
+  box-shadow: var(--shadow);
+}
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.product-card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: clamp(40px, 7vw, 85px);
+}
+
+.product-card__status {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  margin-bottom: 44px;
+
+  color: var(--sage-dark);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--clay);
+
+  box-shadow: 0 0 0 6px rgba(163, 109, 86, 0.1);
+}
+
+.product-card h3 {
+  margin: 0 0 25px;
+
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3.9rem);
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+
+  text-wrap: balance;
+}
+
+.product-card__details > p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: var(--ink-soft);
+
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   PRODUCT TAGS
+========================================== */
+
+.product-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 42px;
+}
+
+.product-card__meta span {
+  padding: 8px 13px;
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  color: var(--ink-soft);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================
+   PREVIEW PANEL
+========================================== */
+
+.product-card__preview {
+  display: grid;
+  place-items: center;
+
+  min-height: 480px;
+
+  padding: 55px;
+
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.28), transparent),
+    var(--sage-light);
+}
+
+.preview-window {
+  width: min(100%, 480px);
+
+  overflow: hidden;
+
+  border: 1px solid rgba(30, 33, 29, 0.14);
+  border-radius: 17px;
+
+  background: var(--paper-light);
+
+  box-shadow: 0 28px 65px rgba(50, 59, 50, 0.17);
+
+  transform: rotate(1.5deg);
+}
+
+.preview-window__top {
+  display: flex;
+
+  gap: 6px;
+
+  padding: 14px 17px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.preview-window__top span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--paper-deep);
+}
+
+.preview-window__body {
+  padding: 35px;
+}
+
+/* ==========================================
+   MOCK UI ELEMENTS
+========================================== */
+
+.preview-line,
+.preview-value,
+.preview-grid div,
+.preview-result {
+  border-radius: 6px;
+
+  background: var(--paper-deep);
+}
+
+.preview-line {
+  width: 70%;
+  height: 10px;
+}
+
+.preview-line--short {
+  width: 42%;
+}
+
+.preview-value {
+  width: 58%;
+  height: 44px;
+
+  margin-top: 15px;
+
+  background: var(--sage-dark);
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 13px;
+
+  margin-top: 34px;
+}
+
+.preview-grid div {
+  height: 75px;
+}
+
+.preview-result {
+  width: 100%;
+  height: 62px;
+
+  margin-top: 25px;
+
+  background: rgba(163, 109, 86, 0.26);
+}
